@@ -1,1 +1,159 @@
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Contenitore della memoria */
+.memory {
+    width: 300px;
+    height: 600px;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Segmenti di memoria */
+.segment {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Segmento di testo */
+.text-segment {
+    background-color: #4caf50;
+    height: 15%;
+}
+
+/* Segmento dati */
+.data-segment {
+    background-color: #2196f3;
+    height: 15%;
+}
+
+/* Heap */
+.heap {
+    background-color: #ff9800;
+    height: 35%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.heap-label {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.heap-block {
+    width: 90%;
+    margin: 2px 0;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+/* Stack */
+.stack {
+    background-color: #f44336;
+    height: 35%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.stack-label {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.stack-frame {
+    width: 90%;
+    margin: 2px 0;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+/* Controlli */
+.controls {
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Legenda */
+.legend {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.legend div {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #000;
+}
+
+.text-color {
+    background-color: #4caf50;
+}
+
+.data-color {
+    background-color: #2196f3;
+}
+
+.heap-color {
+    background-color: #ff9800;
+}
+
+.stack-color {
+    background-color: #f44336;
+}
 
