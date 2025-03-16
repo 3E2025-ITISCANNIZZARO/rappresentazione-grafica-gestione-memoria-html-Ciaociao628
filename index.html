@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestione della Memoria</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h2>Rappresentazione della Memoria</h2>
+<div class="memory">
+    <div class="segment text-segment">Text Segment (Codice)</div>
+    <div class="segment data-segment">Data Segment (Variabili Globali e Statiche)</div>
+    
+    <div class="segment heap">
+        <div class="heap-label">Heap (Allocazione dinamica)</div>
+        <div id="heap-container"></div>
+    </div>
+    
+    <div class="segment stack">
+        <div class="stack-label">Stack (Chiamate di funzione)</div>
+        <div id="stack-container"></div>
+    </div>
+</div>
+
+<div class="controls">
+    <button onclick="allocateMemory()">Allocare Heap</button>
+    <button onclick="deallocateMemory()">Deallocare Heap</button>
+    <button onclick="callFunction()">Simula Chiamata di Funzione</button>
+    <button onclick="returnFunction()">Restituisci Funzione</button>
+</div>
+
+<div class="legend">
+    <h3>Legenda</h3>
+    <div><span class="legend-color text-color"></span> Segmento di testo (Codice eseguibile)</div>
+    <div><span class="legend-color data-color"></span> Segmento dati (Variabili globali e statiche)</div>
+    <div><span class="legend-color heap-color"></span> Heap (Allocazione dinamica)</div>
+    <div><span class="legend-color stack-color"></span> Stack (Chiamate di funzione e variabili locali)</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
